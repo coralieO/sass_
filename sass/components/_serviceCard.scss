@@ -1,0 +1,74 @@
+%card{
+  width: 366.8px;
+  height: 410.2px;
+  border-radius: 36px;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+  background-color: $white;
+}
+
+.card-service{
+    .card{
+        @extend %card;
+        padding: 20px 30px 45px;
+    }
+    h4{
+        height: 25px;
+        font-family: $police;
+        font-size: 18px;
+        font-weight: 600px;
+        margin-top: 24px;
+    }
+    p{
+        width: 302.3px;
+        font-family: $lato;
+        font-size: 15px;
+    }
+    div{
+        text-align: $align_center;
+    }
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $content;
+    height: 1000px;
+}
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+    .card-service{
+       .card{
+        height: 420px;
+       } 
+       p{
+        font-size: 18px;
+        height: 30vh;
+        }
+        height: 200vh;
+    }
+
+}
+
+//responsive tel
+@media screen and (max-width: $tel ){
+       .card-service { 
+        .card {
+            height: 570px;
+            width: 600px;
+        }
+        .card div {
+        height: 200px;
+        }
+        div img{
+           width: 30%;
+        }
+        p{
+            font-size: 25px;
+            width: 500px;
+        }
+        h4{
+            font-size: 30px;
+        }
+        display: block;
+    }
+}
+
+

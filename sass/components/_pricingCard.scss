@@ -1,0 +1,69 @@
+%serviceCard{
+    width: 370px;
+    height: 463px;
+    padding: 50px 30px 45px;
+    margin-top: 60px ;
+}
+
+%serviceh2{
+    font-family: $lobster;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: $titre_article;
+}
+
+%servicep{
+    width: 290.5px;
+    height: 95px;
+    margin-top: 69px;
+}
+
+%serviceh3{
+    background:$bleu;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 40px;
+}
+
+.pack{
+    h2{
+        @extend %serviceh2;
+    }
+    p{
+        @extend %servicep;
+    }
+    h3{
+       @extend %serviceh3;
+    }
+        @extend %card;
+        @extend %serviceCard;
+     
+}
+
+.pack-color{
+    h2{
+        @extend %serviceh2;
+    }
+    p{
+        @extend %servicep;
+    }
+    h3{
+        @extend %serviceh3;
+    }
+    @extend %card;
+    @extend %serviceCard;
+}
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+.pack_card{
+    .pack {
+        margin-left: 310px;
+    }
+    .pack-color{
+        margin-left: 310px;
+    }
+}
+}

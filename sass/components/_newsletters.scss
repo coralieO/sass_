@@ -1,0 +1,37 @@
+#Newsletter{
+    h2{
+        font-family: $lobster;
+        font-size: 20px;
+        color: $titre_article;
+        font-weight: normal;
+    }
+    h3{
+        font-size: 32px;
+        font-weight: normal;
+        font-family: $police;
+        color: $titre;
+    }
+    span{
+        font-weight: 600;
+    }
+    form{
+        margin-top: 20px;
+        display: $display;
+        justify-content: center;
+    }
+    input{
+        background-color: $back_input;
+        border: $none;
+        width: 260px;
+        height: 30px;
+    }
+    input::placeholder{
+        opacity: 0.6;
+        font-family: $police;
+        font-size: 12px;
+        padding-left:15px;
+    }
+    text-align: $align_center;
+    height: 50vh;
+    padding: 135px 100px 0px;
+}

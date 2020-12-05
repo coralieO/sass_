@@ -1,0 +1,63 @@
+header{
+    background-image:url("../assets/img/wave.svg") ;
+    background-repeat: $no;
+    background-position: $right top;
+}
+
+%display_flex{
+    display: $display;
+}
+
+nav{
+    .logo{
+        padding-left:$left;
+        align-items: $align_center;
+        padding-top: 35px;
+        @extend %display_flex;
+    }
+    h2{
+        padding-top: 35px;
+        font-family: $logo;
+        font-size: 40px;
+    }
+    a{
+        text-decoration: $none;
+        color: $white;
+        text-decoration: $none;
+        font-family: $police;
+        font-size: 16px;
+    }
+    justify-content: $content;
+    @extend %display_flex;
+}
+.menu {
+    li {
+    list-style: $none;
+    }
+    align-items: $align_center;
+    margin-right: 220px;
+    justify-content: $content;
+    align-items: center;
+    width: 25%;
+    @extend %display_flex;
+}
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+    body{
+        width: 1164px;
+    }
+    nav{
+        a{
+            color: $titre_article;
+        }
+        margin-bottom: 60px;
+    }
+    header{
+        background-image: $none ;
+    }
+    .menu {
+        margin-top: 60px;
+        margin-right: 200px;
+    }
+    
+}

@@ -1,0 +1,61 @@
+%display{
+    display: $display;
+}
+#introduction{
+    @extend %display;
+}
+.slogant{
+    .phone{
+        padding-right: 122px;
+    }
+    h1{
+        font-family: $police;
+        font-size: $h1;
+        font-weight: $normal;
+        margin-top: 75px;
+        color: $titre;
+    }
+    b{
+        font-size: 74px;
+    }
+    p{
+        font-family: $police;
+        font-size: $menu;
+        font-weight: $weight;
+        color: $grey;
+        width: 341px;
+        height: 80px;
+    
+    }
+    @extend %display;
+    padding-left: 74px;
+    width: 100%;
+    justify-content: $content;
+}
+.souris{
+   margin: 0 auto;
+   width: 80.1px;
+   border-radius: 50%;
+   height: 80.1px;
+   padding: 19.6px 26.4px 19.2px 26.2px;
+   box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+   background-color: $white;
+}
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+.slogant {
+    #introduction{
+        padding: 10px;
+    }
+    b {
+        font-size: 64px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .phone {
+        padding-right: 52px;
+    }
+}
+}

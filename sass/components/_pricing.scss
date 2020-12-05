@@ -1,0 +1,32 @@
+#prices{
+    h2{
+        height: 27px;
+        font-family: $lobster;
+        font-size: 20px;
+        color: #6156f9;
+    }
+    h3{
+        height: 71px;
+        @extend %h3;   
+    }
+    padding: 60px 69px;
+    text-align: $align_center;
+    background-color: $background;
+
+    .pack_card{
+        display: $display;
+        justify-content: $content;
+    }
+    
+}
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+   #prices{
+    .pack_card{
+        display: block;
+    }
+    h2{
+        font-size: 25px;
+    }
+   } 
+}

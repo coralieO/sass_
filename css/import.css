@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-image: url("../assets/img/wave.svg");
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+nav .logo, nav, .menu {
+  display: flex; }
+
+nav {
+  justify-content: space-between; }
+  nav .logo {
+    padding-left: 154px;
+    align-items: center;
+    padding-top: 35px; }
+  nav h2 {
+    padding-top: 35px;
+    font-family: "Dosis", sans-serif;
+    font-size: 40px; }
+  nav a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 16px; }
+
+.menu {
+  align-items: center;
+  margin-right: 220px;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%; }
+  .menu li {
+    list-style: none; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  body {
+    width: 1164px; }
+  nav {
+    margin-bottom: 60px; }
+    nav a {
+      color: #7E76F9; }
+  header {
+    background-image: none; }
+  .menu {
+    margin-top: 60px;
+    margin-right: 200px; } }
+
+#introduction, .slogant {
+  display: flex; }
+
+.slogant {
+  padding-left: 74px;
+  width: 100%;
+  justify-content: space-between; }
+  .slogant .phone {
+    padding-right: 122px; }
+  .slogant h1 {
+    font-family: poppins;
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 75px;
+    color: #42495b; }
+  .slogant b {
+    font-size: 74px; }
+  .slogant p {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 300px;
+    color: #7a839e;
+    width: 341px;
+    height: 80px; }
+
+.souris {
+  margin: 0 auto;
+  width: 80.1px;
+  border-radius: 50%;
+  height: 80.1px;
+  padding: 19.6px 26.4px 19.2px 26.2px;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+  background-color: white; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  .slogant #introduction {
+    padding: 10px; }
+  .slogant b {
+    font-size: 64px; }
+  .slogant h1 {
+    font-size: 45px; }
+  .slogant .phone {
+    padding-right: 52px; } }
+
+.slogant span, .bio p span, #services span, .pack span, .pack-color span {
+  width: 216px;
+  height: 49px;
+  margin-top: 100px;
+  padding: 13px 40px;
+  border-radius: 25px;
+  background: linear-gradient(#6156f9, #1a129f); }
+
+.slogant a, .bio a, #services a, .pack a, .pack-color a, button {
+  font-family: poppins;
+  font-size: 16px;
+  color: white;
+  text-decoration: none; }
+
+#services span {
+  position: relative;
+  left: 50%; }
+
+.pack span {
+  background: white;
+  border: solid 2px #1000FF; }
+
+.pack a {
+  color: #42495b; }
+
+button {
+  margin-left: 15px;
+  margin-top: 0px;
+  width: 100%;
+  height: 22px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#6156f9, #1a129f);
+  font-size: 12px;
+  font-weight: 500px; }
+
+.reseaux {
+  margin-top: 172px;
+  padding-left: 64px;
+  height: 35vh;
+  justify-content: space-between; }
+  .reseaux li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 43px; }
+  .reseaux div::after {
+    content: "|";
+    font-weight: bold;
+    width: 3px;
+    height: 29px;
+    color: #1000FF;
+    display: inline; }
+
+#services h3, main .bio h3, #prices h3 {
+  font-family: poppins;
+  font-size: 50px;
+  font-weight: 600;
+  color: #42495b; }
+
+main p, main .fin_p {
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 300px;
+  color: #7a839e; }
+
+main {
+  padding-top: 100px;
+  background-image: url("../assets/img/background-we-are.png");
+  background-repeat: no-repeat;
+  background-position: right top 1%; }
+  main #biographie {
+    display: flex; }
+  main .bio h2 {
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+    color: #7E76F9;
+    font-weight: normal; }
+  main .bio h3 {
+    width: 309px;
+    height: 71px; }
+  main .bio {
+    margin-left: 84px; }
+  main .we-are {
+    margin-left: 100px; }
+  main p {
+    width: 533px;
+    height: 190px;
+    margin: 14px 0 0; }
+  main .bio_texte {
+    height: 38vh; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 50px; }
+    main .we-are {
+      width: 45%; }
+    main .bio {
+      margin-left: 4px; }
+    main #biographie {
+      padding: 80px; }
+  .we-are img {
+    width: 85%; } }
+
+#services {
+  padding: 40px 186px;
+  background-image: url("../assets/img/background-service.png");
+  background-repeat: no-repeat;
+  height: 170vh; }
+  #services h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #7E76F9; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  #services {
+    height: 1740px; } }
+
+/* responsive tel */
+@media screen and (max-width: 320px) {
+  #services {
+    height: 3900px;
+    text-align: center;
+    padding: 40px 300px; } }
+
+.card-service .card, .pack, .pack-color {
+  width: 366.8px;
+  height: 410.2px;
+  border-radius: 36px;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+  background-color: white; }
+
+.card-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 1000px; }
+  .card-service .card {
+    padding: 20px 30px 45px; }
+  .card-service h4 {
+    height: 25px;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 600px;
+    margin-top: 24px; }
+  .card-service p {
+    width: 302.3px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px; }
+  .card-service div {
+    text-align: center; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  .card-service {
+    height: 200vh; }
+    .card-service .card {
+      height: 420px; }
+    .card-service p {
+      font-size: 18px;
+      height: 30vh; } }
+
+@media screen and (max-width: 320px) {
+  .card-service {
+    display: block; }
+    .card-service .card {
+      height: 570px;
+      width: 600px; }
+    .card-service .card div {
+      height: 200px; }
+    .card-service div img {
+      width: 30%; }
+    .card-service p {
+      font-size: 25px;
+      width: 500px; }
+    .card-service h4 {
+      font-size: 30px; } }
+
+#prices {
+  padding: 60px 69px;
+  text-align: center;
+  background-color: #7e76f9; }
+  #prices h2 {
+    height: 27px;
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+    color: #6156f9; }
+  #prices h3 {
+    height: 71px; }
+  #prices .pack_card {
+    display: flex;
+    justify-content: space-between; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  #prices .pack_card {
+    display: block; }
+  #prices h2 {
+    font-size: 25px; } }
+
+.pack, .pack-color {
+  width: 370px;
+  height: 463px;
+  padding: 50px 30px 45px;
+  margin-top: 60px; }
+
+.pack h2, .pack-color h2 {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  color: #7E76F9; }
+
+.pack p, .pack-color p {
+  width: 290.5px;
+  height: 95px;
+  margin-top: 69px; }
+
+.pack h3, .pack-color h3 {
+  background: linear-gradient(#6156f9, #1a129f);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 40px; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  .pack_card .pack {
+    margin-left: 310px; }
+  .pack_card .pack-color {
+    margin-left: 310px; } }
+
+#Newsletter {
+  text-align: center;
+  height: 50vh;
+  padding: 135px 100px 0px; }
+  #Newsletter h2 {
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+    color: #7E76F9;
+    font-weight: normal; }
+  #Newsletter h3 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: poppins;
+    color: #42495b; }
+  #Newsletter span {
+    font-weight: 600; }
+  #Newsletter form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; }
+  #Newsletter input {
+    background-color: #f6f7fb;
+    border: none;
+    width: 260px;
+    height: 30px; }
+  #Newsletter input::placeholder {
+    opacity: 0.6;
+    font-family: poppins;
+    font-size: 12px;
+    padding-left: 15px; }
+
+footer {
+  display: flex;
+  background-image: url("../assets/img/footer.png");
+  background-repeat: no-repeat;
+  height: 78vh;
+  padding: 199px 140px 0;
+  align-items: center;
+  justify-content: space-between;
+  color: white; }
+  footer h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    text-align: center; }
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 16px; }
+  footer h4 {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 23px; }
+  footer h3 {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500px;
+    margin-bottom: 20px; }
+  footer li {
+    list-style: none;
+    margin-bottom: 25px; }
+  footer .reseaux-f {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+  footer .contact {
+    display: flex; }
+  footer section {
+    height: 30vh; }
+  footer span {
+    margin-left: 15px; }
+
+.reseaux-f h3 {
+  width: 204px; }
+
+.contact i {
+  margin-right: 5px;
+  padding-top: 5px; }
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 109px 140px 0;
+    height: 58vh; } }

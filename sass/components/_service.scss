@@ -1,0 +1,25 @@
+#services{
+    h2{
+        font-family: $lato;
+        font-size: 25px;
+        color: $titre_article;
+    }
+    padding: 40px 186px;
+    background-image: url("../assets/img/background-service.png");
+    background-repeat: $no;
+    height: 170vh;
+}   
+
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+    #services{height: 1740px;}
+}
+
+/* responsive tel */
+@media screen and (max-width: $tel ){
+    #services {
+        height: 3900px;
+        text-align: center;
+        padding: 40px 300px;
+    }
+}

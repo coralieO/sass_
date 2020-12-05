@@ -1,0 +1,66 @@
+%bio_texte{
+    font-family: $police;
+    font-size: $who_we-are;
+    font-weight:$weight;
+    color: $grey;
+}
+main{
+    #biographie{
+        display: $display;
+    }
+    .bio h2{
+        font-family: $lobster;
+        font-size: 20px;
+        color: $titre_article;
+        font-weight: normal;
+    }
+    
+    .bio h3{
+        width: 309px;
+        height: 71px;
+        @extend %h3;   
+    }
+    .bio{
+        margin-left:84px;
+    }
+    .we-are{
+        margin-left: 100px;
+    }
+    p{
+        width: 533px;
+        height: 190px;
+        margin: 14px 0 0;
+       @extend %bio_texte;
+    }
+    .bio_texte{
+        height: 38vh;
+    }
+   .fin_p{
+        @extend %bio_texte;
+    }
+    padding-top:100px ;
+    background-image: url("../assets/img/background-we-are.png") ;
+    background-repeat: $no;
+    background-position: $right top 1%;
+}
+    
+/* responsive tablette ordinateur */
+@media screen and (max-width: $tablette ){
+main{
+    .we-are{
+     width: 45%;
+    }
+    .bio {
+        margin-left: 4px;
+    }
+    #biographie{
+        padding: 80px;
+    }
+    padding-top: 50px;
+}
+.we-are{
+    img{
+        width: 85%;
+    }
+}
+}

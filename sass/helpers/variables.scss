@@ -1,0 +1,50 @@
+//alignement, position
+$display: flex;
+$content: space-between;
+$align_center: center;
+$left: 154px;
+$right: right;
+$wrap: wrap;
+
+//type
+$menu: 16px;
+$who_we-are: 16px;
+$text_button: 16px;
+$footer_text: 16px;
+$h1: 50px;
+$bold: 74px;
+$none: none;
+$weight: 300px;
+$weight2: 500px;
+
+
+//police
+$police: poppins;
+$normal: normal;
+$serviceP: Lato;
+$logo:'Dosis', sans-serif;
+$lobster: 'Lobster', cursive;
+$lato:'Lato', sans-serif;
+
+
+//background
+$no: no-repeat;
+
+//border
+$border: 25px;
+
+//color
+$white : white;
+$bleu: linear-gradient( #6156f9 , #1a129f);
+$titre_article: #7E76F9;
+$background:#7e76f9;
+$contour_prices: #1000FF;
+$grey:#7a839e;
+$titre: #42495b;
+$back_input: #f6f7fb;
+
+//responsive tablette ordinateur 
+$tablette:  768px;
+
+//responsive tel
+$tel: 320px;
